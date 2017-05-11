@@ -1,0 +1,20 @@
+{
+  "name": "phaser-mario",
+  "version": "1.0.0",
+  "description": "This is part of the Phaser Component Library.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SaFrMo/phaser-mario.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SaFrMo/phaser-mario/issues"
+  },
+  "homepage": "https://github.com/SaFrMo/phaser-mario#readme"
+}
