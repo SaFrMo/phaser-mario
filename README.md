@@ -31,115 +31,115 @@ const mario = this.game.add.existing(new Mario({
 
 * `collideWorldBounds`
 
-Type: `boolean`<br>
-Default: `false`
+    Type: `boolean`<br>
+    Default: `false`
 
-Whether or not the mario collides with the world bounds.
+    Whether or not the mario collides with the world bounds.
 
 * `controls`
 
-Type: `boolean`<br>
-Default: `false`
+    Type: `boolean`<br>
+    Default: `false`
 
-Whether or not the mario can be controlled by the player.
+    Whether or not the mario can be controlled by the player.
 
 * `deadzone`
 
-Type: `object: { left, width }`<br>
-Default: `{}`
+    Type: `object: { left, width }`<br>
+    Default: `{}`
 
-The camera's [deadzone](https://youtu.be/89TRXUm8jMI?t=9s).
+    The camera's [deadzone](https://youtu.be/89TRXUm8jMI?t=9s).
 
-If `left` is exactly 1 or lower, a percentage of the screen width will be used; ditto for `width`. Otherwise, the defined pixel amount will be used.
+    If `left` is exactly 1 or lower, a percentage of the screen width will be used; ditto for `width`. Otherwise, the defined pixel amount will be used.
 
 * `follow`
 
-Type: `boolean`<br>
-Default: `false`
+    Type: `boolean`<br>
+    Default: `false`
 
-Whether or not the camera follows the mario.
+    Whether or not the camera follows the mario.
 
 * `frame`
 
-Type: `string | number`<br>
-Default: `''`
+    Type: `string | number`<br>
+    Default: `''`
 
-See [Sprite docs](https://phaser.io/docs/2.6.2/Phaser.Sprite.html).
+    See [Sprite docs](https://phaser.io/docs/2.6.2/Phaser.Sprite.html).
 
 * `game`
 
-Required<br>
-Type: `Phaser.Game`
+    Required<br>
+    Type: `Phaser.Game`
 
-The game where this mario will live.
+    The game where this mario will live.
 
 * `health`
 
-Type: `number`<br>
-Default: `1`
+    Type: `number`<br>
+    Default: `1`
 
-This mario's starting health.
+    This mario's starting health.
 
 * `height`
 
-Type: `number`<br>
-Default: `64`
+    Type: `number`<br>
+    Default: `64`
 
-This mario's height.
+    This mario's height.
 
 * `jump`
 
-Type: `number`<br>
-Default: `-250`
+    Type: `number`<br>
+    Default: `-250`
 
-The jump force of the mario. Note that to jump up, this value must be negative.
+    The jump force of the mario. Note that to jump up, this value must be negative.
 
 * `jumps`
 
-Type: `number`<br>
-Default: `1`
+    Type: `number`<br>
+    Default: `1`
 
-The number of times the mario can jump. Set to 2 for double-jump, for example.
+    The number of times the mario can jump. Set to 2 for double-jump, for example.
 
 * `key`
 
-Type: `string | Phaser.RenderTexture | Phaser.BitmapData | PIXI.Texture`<br>
-Default: `''`
+    Type: `string | Phaser.RenderTexture | Phaser.BitmapData | PIXI.Texture`<br>
+    Default: `''`
 
-See [Sprite docs](https://phaser.io/docs/2.6.2/Phaser.Sprite.html).
+    See [Sprite docs](https://phaser.io/docs/2.6.2/Phaser.Sprite.html).
 
 * `speed`
 
-Type: `number`<br>
-Default: `350`
+    Type: `number`<br>
+    Default: `350`
 
-The x-axis speed of the mario.
+    The x-axis speed of the mario.
 
 * `width`
 
-Type: `number`<br>
-Default: `64`
+    Type: `number`<br>
+    Default: `64`
 
-This mario's width.
+    This mario's width.
 
 * `x`
 
-Type: `number`<br>
-Default: `0`
+    Type: `number`<br>
+    Default: `0`
 
-The x-value of the mario's spawn location.
+    The x-value of the mario's spawn location.
 
 * `y`
 
-Type: `number`<br>
-Default: `0`
+    Type: `number`<br>
+    Default: `0`
 
-The y-value of the mario's spawn location.
+    The y-value of the mario's spawn location.
 
 ### Properties
 
 * `state`
 
-Type: `Phaser.State`
+    Type: `Phaser.State`
 
-Shortcut to the current state object. Useful for accessing global properties from that state.
+    Shortcut to the current state object. Useful for accessing global properties from that state.
