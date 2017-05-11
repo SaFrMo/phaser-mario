@@ -31,10 +31,10 @@ const mario = this.game.add.existing(new Mario({
 
 ##### `collideWorldBounds`
 
-    Type: `boolean`<br>
-    Default: `false`
+    + Type: `boolean`<br>
+    + Default: `false`
 
-    Whether or not the mario collides with the world bounds.
+    + Whether or not the mario collides with the world bounds.
 
 ##### `controls`
 
