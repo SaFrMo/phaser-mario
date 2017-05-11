@@ -29,21 +29,21 @@ const mario = this.game.add.existing(new Mario({
 
 #### options
 
-##### `collideWorldBounds`
+* `collideWorldBounds`
 
-    + Type: `boolean`<br>
-    + Default: `false`
+        Type: `boolean`<br>
+        Default: `false`
 
-    + Whether or not the mario collides with the world bounds.
+        Whether or not the mario collides with the world bounds.
 
-##### `controls`
+* `controls`
 
     Type: `boolean`<br>
     Default: `false`
 
     Whether or not the mario can be controlled by the player.
 
-##### `deadzone`
+* `deadzone`
 
     Type: `object: { left, width }`<br>
     Default: `{}`
@@ -52,84 +52,84 @@ const mario = this.game.add.existing(new Mario({
 
     If `left` is exactly 1 or lower, a percentage of the screen width will be used; ditto for `width`. Otherwise, the defined pixel amount will be used.
 
-##### `follow`
+* `follow`
 
     Type: `boolean`<br>
     Default: `false`
 
     Whether or not the camera follows the mario.
 
-##### `frame`
+* `frame`
 
     Type: `string | number`<br>
     Default: `''`
 
     See [Sprite docs](https://phaser.io/docs/2.6.2/Phaser.Sprite.html).
 
-##### `game`
+* `game`
 
     Required<br>
     Type: `Phaser.Game`
 
     The game where this mario will live.
 
-##### `health`
+* `health`
 
     Type: `number`<br>
     Default: `1`
 
     This mario's starting health.
 
-##### `height`
+* `height`
 
     Type: `number`<br>
     Default: `64`
 
     This mario's height.
 
-##### `jump`
+* `jump`
 
     Type: `number`<br>
     Default: `-250`
 
     The jump force of the mario. Note that to jump up, this value must be negative.
 
-##### `jumps`
+* `jumps`
 
     Type: `number`<br>
     Default: `1`
 
     The number of times the mario can jump. Set to 2 for double-jump, for example.
 
-##### `key`
+* `key`
 
     Type: `string | Phaser.RenderTexture | Phaser.BitmapData | PIXI.Texture`<br>
     Default: `''`
 
     See [Sprite docs](https://phaser.io/docs/2.6.2/Phaser.Sprite.html).
 
-##### `speed`
+* `speed`
 
     Type: `number`<br>
     Default: `350`
 
     The x-axis speed of the mario.
 
-##### `width`
+* `width`
 
     Type: `number`<br>
     Default: `64`
 
     This mario's width.
 
-##### `x`
+* `x`
 
     Type: `number`<br>
     Default: `0`
 
     The x-value of the mario's spawn location.
 
-##### `y`
+* `y`
 
     Type: `number`<br>
     Default: `0`
