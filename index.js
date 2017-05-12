@@ -29,7 +29,7 @@ export default class extends Phaser.Sprite{
         // Set up speed and force values
         this.xSpeed = opts.speed || 350
         this.jumpForce = opts.jump || -250
-        this.totalJumps = opts.jumps || 1
+        this.totalJumps = opts.hasOwnProperty('jumps') ? opts.jumps : 1
         this.currentJump = 0
 
         // Set up controls
