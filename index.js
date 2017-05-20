@@ -42,6 +42,9 @@ export default class extends Phaser.Sprite{
             this.jumpButton.onDown.add( function(){ this.jump() }, this )
 
         }
+        
+        // Set up where the sprite is facing
+        this.facing = 1
 
     }
 
@@ -72,9 +75,11 @@ export default class extends Phaser.Sprite{
         if( this.cursors.left.isDown ){
             this.body.velocity.x = -this.xSpeed
             this.direction = -1
+            this.facing = -1
         } else if ( this.cursors.right.isDown ){
             this.body.velocity.x = this.xSpeed
             this.direction = 1
+            this.facing = 1
         } else {
             this.body.velocity.x = 0
         }
