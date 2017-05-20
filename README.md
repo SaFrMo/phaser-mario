@@ -138,6 +138,18 @@ The y-value of the mario's spawn location.
 
 ### Properties
 
+##### `direction`
+
+Type: `number`
+
+Shortcut to current mario X direction. -1 = left, 0 = no active X movement, 1 = right.
+
+##### `facing`
+
+Type: `number`
+
+Shortcut to direction mario is facing. -1 = left, 1 = right.
+
 ##### `state`
 
 Type: `Phaser.State`
