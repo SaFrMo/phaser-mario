@@ -155,3 +155,7 @@ Shortcut to direction mario is facing. -1 = left, 1 = right.
 Type: `Phaser.State`
 
 Shortcut to the current state object. Useful for accessing global properties from that state.
+
+## Versions
+
+* `1.1.0` - fixed bug in `update` that prevented marios with `controls: false` from running

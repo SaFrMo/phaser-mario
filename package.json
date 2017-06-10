@@ -1,6 +1,6 @@
 {
   "name": "phaser-mario",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Basic controllable Mario-like player character for Phaser.",
   "main": "index.js",
   "scripts": {

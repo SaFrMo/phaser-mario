@@ -33,7 +33,7 @@ export default class extends Phaser.Sprite{
         this.currentJump = 0
 
         // Set up controls
-        if( opts.hasOwnProperty('controls') ){
+        if( opts.hasOwnProperty('controls') && opts.controls ){
 
             this.cursors = this.game.input.keyboard.createCursorKeys()
             this.jumpButton = this.game.input.keyboard.addKey( Phaser.Keyboard.SPACEBAR )
@@ -42,7 +42,7 @@ export default class extends Phaser.Sprite{
             this.jumpButton.onDown.add( function(){ this.jump() }, this )
 
         }
-        
+
         // Set up where the sprite is facing
         this.facing = 1
 
@@ -71,17 +71,19 @@ export default class extends Phaser.Sprite{
             this.currentJump = 0
         }
 
-        // horizontal movement
-        if( this.cursors.left.isDown ){
-            this.body.velocity.x = -this.xSpeed
-            this.direction = -1
-            this.facing = -1
-        } else if ( this.cursors.right.isDown ){
-            this.body.velocity.x = this.xSpeed
-            this.direction = 1
-            this.facing = 1
-        } else {
-            this.body.velocity.x = 0
+        if( opts.hasOwnProperty('controls') && opts.controls ){
+            // horizontal movement
+            if( this.cursors.left.isDown ){
+                this.body.velocity.x = -this.xSpeed
+                this.direction = -1
+                this.facing = -1
+            } else if ( this.cursors.right.isDown ){
+                this.body.velocity.x = this.xSpeed
+                this.direction = 1
+                this.facing = 1
+            } else {
+                this.body.velocity.x = 0
+            }
         }
     }
 }
