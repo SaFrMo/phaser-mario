@@ -4,6 +4,9 @@ export default class extends Phaser.Sprite{
     constructor( opts ){
         super( opts.game, opts.x || 0, opts.y || 0, opts.key || '', opts.frame || '' )
 
+        // Save options
+        this.opts = opts
+
         // Enable player physics
         this.game.physics.enable( this, Phaser.Physics.ARCADE )
 
@@ -71,7 +74,7 @@ export default class extends Phaser.Sprite{
             this.currentJump = 0
         }
 
-        if( opts.hasOwnProperty('controls') && opts.controls ){
+        if( this.opts.hasOwnProperty('controls') && this.opts.controls ){
             // horizontal movement
             if( this.cursors.left.isDown ){
                 this.body.velocity.x = -this.xSpeed

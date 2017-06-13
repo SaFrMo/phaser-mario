@@ -150,6 +150,12 @@ Type: `number`
 
 Shortcut to direction mario is facing. -1 = left, 1 = right.
 
+##### `opts`
+
+Type: `object`
+
+The options initially passed to the Mario.
+
 ##### `state`
 
 Type: `Phaser.State`
