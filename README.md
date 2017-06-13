@@ -164,4 +164,5 @@ Shortcut to the current state object. Useful for accessing global properties fro
 
 ## Versions
 
+* `1.1.2` - fixed `opts` reference bug in `update` and updated docs
 * `1.1.0` - fixed bug in `update` that prevented marios with `controls: false` from running
